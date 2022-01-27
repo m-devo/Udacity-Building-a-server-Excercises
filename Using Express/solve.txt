@@ -1,0 +1,49 @@
+To Complete This Exercise:
+
+    Install Node modules. Note: if you complete the project in the provided workspace, you can skip this step because it has already been completed
+
+    npm install
+
+    Install express
+
+    npm i express
+
+    Install type definitions for express
+
+    npm i --save-dev @types/express
+
+    Install nodemon
+
+    npm i --save-dev nodemon
+
+    Add a start script for nodemon in the package.json file
+
+    "start": "nodemon src/index.ts"
+
+    Import express into index.ts
+
+    import express from 'express';
+
+    Create your application object with express()
+
+    const app = express();
+
+    Set a port
+
+    const port = 3000;
+
+    Add an API endpoint to get a route, then send a response to the browser
+
+    app.get('/api', (req, res) => {
+     res.send('Hello, world!');
+    });
+
+    Set your application to listen on your port and output a message to the console with app.listen
+
+    app.listen(port, ()=> {
+     console.log(`server started at localhost:${port}`)
+    });
+
+    Run npm run start to see the application start in development mode.
+    Run npm run build and node build/. to build and run your file project.
+
